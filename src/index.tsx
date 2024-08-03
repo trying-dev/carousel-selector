@@ -22,7 +22,7 @@ SOFTWARE.
 
 import React, { useState, useEffect, useRef, useCallback } from "react"
 
-interface CarouselProps {
+export interface CarouselProps {
   options: any[]
   onChange: (itemAtFront: any) => any
   initialOption: any
