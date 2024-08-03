@@ -1,5 +1,5 @@
 {
-  "name": "carousel",
+  "name": "carousel-selector",
   "version": "1.0.0",
   "description": "A carousel selector",
   "main": "dist/index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tu-usuario/my-carousel.git"
+    "url": "git+https://github.com/trying-dev/carousel-selector"
   },
   "keywords": [
     "carousel",
