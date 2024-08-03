@@ -1,13 +1,15 @@
-# My Carousel
+# Carousel
 
 A simple and customizable carousel component for React.
+
+[Storybook](https://carousel-selector-storybook.netlify.app/?path=/story/carousel--default)
 
 ## Installation
 
 You can install the package via npm:
 
 ```bash
-npm install my-carousel
+npm install carousel-selector
 ```
 
 Make sure you have `react` and `react-dom` installed as peer dependencies:
@@ -18,11 +20,11 @@ npm install react react-dom
 
 ## Usage
 
-Here's a basic example of how to use the `MyCarousel` component in your project:
+Here's a basic example of how to use the `Carousel` component in your project:
 
 ```tsx
 import React, { useState } from "react"
-import { MyCarousel } from "my-carousel"
+import { Carousel } from "carousel-selector"
 
 const App = () => {
   const [selectedItem, setSelectedItem] = useState(null)
@@ -34,7 +36,7 @@ const App = () => {
   return (
     <div>
       <h1>My Carousel Example</h1>
-      <MyCarousel
+      <Carousel
         options={[1, 2, 3, 4, 5, 6, 7, 8, 9]}
         onChange={handleChange}
         initialOption={1}
@@ -49,7 +51,7 @@ export default App
 
 ## Props
 
-### `MyCarousel`
+### `Carousel`
 
 | Prop            | Type       | Description                                                | Default                       |
 | --------------- | ---------- | ---------------------------------------------------------- | ----------------------------- |
