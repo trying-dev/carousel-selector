@@ -1,5 +1,5 @@
 import React from "react";
-interface CarouselProps {
+export interface CarouselProps {
     options: any[];
     onChange: (itemAtFront: any) => any;
     initialOption: any;
