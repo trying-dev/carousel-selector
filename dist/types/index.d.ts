@@ -1,8 +1,8 @@
 import React from "react";
-export interface CarouselProps {
+export interface CarouselSelectorProps {
     options: any[];
     onChange: (itemAtFront: any) => any;
     initialOption: any;
 }
-declare const Carousel: ({ options, onChange, initialOption, }: CarouselProps) => React.JSX.Element;
-export default Carousel;
+declare const CarouselSelector: ({ options, onChange, initialOption, }: CarouselSelectorProps) => React.JSX.Element;
+export default CarouselSelector;

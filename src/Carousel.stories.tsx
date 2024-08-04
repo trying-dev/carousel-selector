@@ -1,14 +1,16 @@
 import React from "react"
 import { Meta, StoryFn } from "@storybook/react"
-import Carousel from "."
-import type { CarouselProps } from "."
+import CarouselSelector from "."
+import { CarouselSelectorProps } from "."
 
 export default {
   title: "Carousel",
-  component: Carousel,
+  component: CarouselSelector,
 } as Meta
 
-const Template: StoryFn<CarouselProps> = (args: any) => <Carousel {...args} />
+const Template: StoryFn<CarouselSelectorProps> = (args: any) => (
+  <CarouselSelector {...args} />
+)
 
 export const Default = Template.bind({})
 Default.args = {

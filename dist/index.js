@@ -20,10 +20,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 import React, { useState, useEffect, useRef, useCallback } from "react";
-var Carousel = function (_a) {
+var CarouselSelector = function (_a) {
     var _b = _a.options, options = _b === void 0 ? [1, 2, 3, 4, 5, 6, 7, 8, 9] : _b, onChange = _a.onChange, initialOption = _a.initialOption;
-    var initialAngle = (options.indexOf(initialOption) / options.length) * 360;
-    var _c = useState(initialAngle), angle = _c[0], setAngle = _c[1];
+    var initialIndex = options.indexOf(initialOption);
+    var initialAngle = (initialIndex / options.length) * 360;
+    var _c = useState(-initialAngle), angle = _c[0], setAngle = _c[1]; // Rotate to make initialOption visible
     var _d = useState(false), isDragging = _d[0], setIsDragging = _d[1];
     var _e = useState(0), startX = _e[0], setStartX = _e[1];
     var containerRef = useRef(null);
@@ -144,4 +145,4 @@ var Carousel = function (_a) {
                 } }, item));
         }))));
 };
-export default Carousel;
+export default CarouselSelector;
